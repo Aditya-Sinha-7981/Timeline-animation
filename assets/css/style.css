@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #0e0e13;
+  font-family: "Comfortaa";
+  color: white;
+}
+
+.center-div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes scroller-text-animation {
+  from {
+    color: #3d3d3d;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes scroller-text-animation {
+  from {
+    color: #3d3d3d;
+  }
+  to {
+    color: white;
+  }
+}
+
+@-webkit-keyframes scroller-circle-animation {
+  from {
+    background: #3d3d3d;
+  }
+  to {
+    background: white;
+  }
+}
+
+@keyframes scroller-circle-animation {
+  from {
+    background: #3d3d3d;
+  }
+  to {
+    background: white;
+  }
+}
+
+.heading {
+  color: white;
+  padding-bottom: 50px;
+  background: #0e0e13;
+}
+
+.heading__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heading__container h3 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 60px 0 10px 0;
+}
+
+.heading__container h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 20px 0 10px 0;
+}
+
+.heading__container .text-container {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.heading__container .text-container p {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.roadmap {
+  position: relative;
+  z-index: -3;
+  overflow: visible;
+}
+
+.roadmap__container .roadmap-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-progress-bar {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  background: #3d3d3d;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-progress-bar .progress-bar {
+  width: 3px;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  bottom: 50vh;
+  z-index: -1;
+  background: #237bff;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 180px 1fr;
+      grid-template-columns: 1fr 180px 1fr;
+  -ms-grid-rows: (minmax(1px, 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(1px, 1fr));
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .left-block {
+  width: 100%;
+  text-align: center;
+  display: unset;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .left-block h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50vh;
+  -webkit-animation: scroller-text-animation 4s;
+          animation: scroller-text-animation 4s;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .center-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .center-block .center-dot {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50vh;
+  -webkit-box-shadow: 0 0 0 8px #0a0a0a;
+          box-shadow: 0 0 0 8px #0a0a0a;
+  -webkit-animation: scroller-circle-animation 4s;
+          animation: scroller-circle-animation 4s;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .right-block {
+  width: 100%;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .right-block ul li {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  line-height: 30px;
+  -webkit-animation: scroller-text-animation 4s;
+          animation: scroller-text-animation 4s;
+}
+
+section.roadmap {
+  position: relative;
+  z-index: -3;
+}
+/*# sourceMappingURL=style.css.map */
