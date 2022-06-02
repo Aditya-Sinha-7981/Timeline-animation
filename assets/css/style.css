@@ -119,6 +119,13 @@ body {
           align-items: center;
 }
 
+.roadmap__container .roadmap-wrapper .scrollarea {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70vh;
+}
+
 .roadmap__container .roadmap-wrapper .roadmap-progress-bar {
   width: 3px;
   height: 100%;
@@ -159,6 +166,7 @@ body {
       grid-template-columns: 1fr 180px 1fr;
   -ms-grid-rows: (minmax(1px, 1fr))[auto-fit];
       grid-template-rows: repeat(auto-fit, minmax(1px, 1fr));
+  color: #3d3d3d;
 }
 
 .roadmap__container .roadmap-wrapper .roadmap-item .left-block {
@@ -175,8 +183,12 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 50vh;
-  -webkit-animation: scroller-text-animation 4s;
-          animation: scroller-text-animation 4s;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .left-block .timeline-heading.animated {
+  -webkit-animation: scroller-text-animation 2s;
+          animation: scroller-text-animation 2s;
+  color: white;
 }
 
 .roadmap__container .roadmap-wrapper .roadmap-item .center-block {
@@ -192,15 +204,19 @@ body {
 .roadmap__container .roadmap-wrapper .roadmap-item .center-block .center-dot {
   width: 15px;
   height: 15px;
-  background: white;
+  background: #3d3d3d;
   border-radius: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 50vh;
   -webkit-box-shadow: 0 0 0 8px #0a0a0a;
           box-shadow: 0 0 0 8px #0a0a0a;
-  -webkit-animation: scroller-circle-animation 4s;
-          animation: scroller-circle-animation 4s;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .center-block .center-dot.animated {
+  -webkit-animation: scroller-circle-animation 2s;
+          animation: scroller-circle-animation 2s;
+  background: white;
 }
 
 .roadmap__container .roadmap-wrapper .roadmap-item .right-block {
@@ -211,8 +227,12 @@ body {
   font-size: 1.2rem;
   padding-bottom: 10px;
   line-height: 30px;
-  -webkit-animation: scroller-text-animation 4s;
-          animation: scroller-text-animation 4s;
+}
+
+.roadmap__container .roadmap-wrapper .roadmap-item .right-block ul.timeline-text.animated {
+  -webkit-animation: scroller-text-animation 2s;
+          animation: scroller-text-animation 2s;
+  color: white;
 }
 
 section.roadmap {
